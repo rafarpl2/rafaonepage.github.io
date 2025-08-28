@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <style>
+        /* Efek scroll halus */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .friend-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .friend-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .friend-item p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .friend-gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HOME  */
+        #home {
+            background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center/cover;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        #home button {
+            background: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #home button:hover {
+            background: darkred;
+        }
+
+        /* ABOUT ME */
+        #about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #about img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 0;
+            margin-top: 20px;
+        }
+
+        /* MY FRIEND */
+        #friend {
+            background: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #friend button {
+            background: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #friend img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0;
+            margin-top: 20px;
+        }
+
+        /* CONTACT */
+        #contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>MyWebsite</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#friend">My Friend</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home">
+        <h2>Selamat Datang Di</h2>
+        <p>website sederhana Saya.</p>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+        <h2>Its About Me</h2>
+        <p>Halo, nama saya Rafa saya adalah seorang siswa smkn 6 tangsel.</p>
+        <img src="WhatsApp Image 2025-08-28 at 07.27.57_f20b7723.jpg" alt="Foto Saya">
+    </section>
+
+    <!-- MY FRIEND -->
+    <section id="friend">
+        <h2>My Friend</h2>
+        <p>Ini adalah teman saya yang selalu mendukung saya dalam belajar.</p>
+        <div class="friend-gallery">
+            <div class="friend-item">
+                <img src="WhatsApp Image 2025-08-28 at 07.26.00_20b35a9c.jpg" alt="Foto Teman 1">
+                <p>teman keren dan selalu membantu </p>
+            </div>
+            <div class="friend-item">
+                <img src="WhatsApp Image 2025-08-11 at 16.54.16_700cbe88.jpg" alt="Foto Teman 2">
+                <p>Naufal alfiha </p>
+            </div>
+            <div class="friend-item">
+                <img src="WhatsApp Image 2025-08-11 at 17.11.37_72c1df60.jpg" alt="Foto Teman 3">
+                <p>fahri</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Alamat tinggal ,Rumah saya berada disini Tangerang Selatan.</p>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0906863173855!2d106.66030933641174!3d-6.2517809612318755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fbbb6039d0c7%3A0xe443cb23db99e231!2sJl.%20Rawa%20Kutuk%2C%20Kec.%20Serpong%20Utara%2C%20Kota%20Tangerang%20Selatan%2C%20Banten!5e0!3m2!1sid!2sid!4v1756344042163!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; Rapa 2025. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
